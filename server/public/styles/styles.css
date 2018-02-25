@@ -11,3 +11,17 @@
 .col-xs-4 {
     height: 300px;
 }
+
+img, .description {
+    margin-top: 50px;
+}
+
+.description {
+    display: block;
+    height: 100px;
+    background-color: tomato;
+    color: white;
+    padding: 25px;
+    border-radius: 3px;
+}
+

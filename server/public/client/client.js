@@ -7,5 +7,11 @@ app.controller('GalleryController', function() {
 
     gallery.photos = placeholder.data;
 
+    gallery.toggleDesc = toggleDesc;
+
+    function toggleDesc(image) {
+        image.showText = !image.showText;
+    }
+
     
 });

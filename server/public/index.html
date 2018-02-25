@@ -19,8 +19,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-4" ng-repeat="photo in GC.photos">
-                    <img class="img-thumbnail" ng-src="{{photo.path}}" alt="{{photo.alt}}" />
-                    <div class="description">{{photo.description}}</div>
+                    <div class="button-style" ng-click="GC.toggleDesc(photo)">
+                        <img ng-hide="photo.showText" class="img-thumbnail" ng-src="{{photo.path}}" alt="{{photo.alt}}" />
+                        <div ng-show="photo.showText" class="description">{{photo.description}}</div>
+                    </div>
                 </div>
             </div>
         </div>
