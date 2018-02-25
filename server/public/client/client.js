@@ -9,9 +9,14 @@ app.controller('GalleryController', function() {
 
     gallery.toggleDesc = toggleDesc;
 
+    gallery.addLikes = addLikes;
+
     function toggleDesc(image) {
         image.showText = !image.showText;
     }
 
+    function addLikes(image) {
+        image.likes = image.likes + 1;
+    }
     
 });

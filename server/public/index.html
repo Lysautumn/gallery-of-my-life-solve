@@ -23,6 +23,7 @@
                         <img ng-hide="photo.showText" class="img-thumbnail" ng-src="{{photo.path}}" alt="{{photo.alt}}" />
                         <div ng-show="photo.showText" class="description">{{photo.description}}</div>
                     </div>
+                    <button class="btn btn-primary" ng-click="GC.addLikes(photo)">Like</button>{{photo.likes}}
                 </div>
             </div>
         </div>
