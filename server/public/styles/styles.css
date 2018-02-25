@@ -1,3 +1,9 @@
 /* body {
     background-color: rebeccapurple;
 } */
+
+#header {
+    background-color: navy;
+    color: white;
+    height: 100px;
+}
